@@ -1,0 +1,145 @@
+body {
+  background-color: #f9f7f0;  /* Soft Ivory */
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.bg-soft{
+    background-color: #f9f7f0;
+}
+
+footer {
+  background-color: #333;  /* Deep Teal */
+  color: #ffffff;
+}
+
+footer p{
+    color: white;
+}
+
+.header{
+    background-color: #333;  /* Deep Teal */
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+footer h2{
+     color: #ffffff;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.bottom{
+    background-color:#000000;
+    padding-bottom: 5px;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #000000;  /* Pure black */
+  color: #ffffff;             /* White text */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.cta-button:hover {
+  background-color: #444444;  /* Slightly lighter black/gray */
+  transform: scale(1.05);
+}
+
+.header a{
+    color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+header a:hover, footer a:hover {
+  color: #ac9629; /* Sunset Orange on hover */
+}
+
+.card {
+  background-color: #f9f9f9; /* Or #f9f9f9 if you use light gray */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2px;
+  margin: 5px;
+  /* keep your existing margin and padding untouched */
+}
+
+.card:hover {
+  transform: scale(1.03);  /* Slight zoom */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Bigger shadow */
+}
+
+.crousel{
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+}
+
+/* h1{
+    font-size: 1.8rem;
+} */
+
+.order-btn{
+    background-color: #ac9629; /* Or whichever color you pick */
+  color:#000000;
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+    
+}
+
+.order-btn:hover{
+    background-color: #f1c40fd9; /* Slightly darker on hover */
+    color: #000000;
+}
+
+.order-btn a{
+    color: #000000;
+}
+
+.order-btn a:hover{
+    color: #000000;
+}
+
+.logo :hover{
+    transform: scale(1.12);
+    cursor: pointer;
+}
+
+.cart{
+    
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    /* font-weight: 500; */
+    border-radius: round;
+    
+}
+
+.pointer{
+    cursor: pointer;
+}
+.bigger{
+    font-size: 2.55rem;
+    margin-bottom: 20px;
+}

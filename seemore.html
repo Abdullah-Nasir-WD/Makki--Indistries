@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See More | Makki Industries</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+      <style>
+    #urduDescription {
+      display: none;
+      direction: rtl;
+      font-family: 'Noto Nastaliq Urdu', serif;
+    }
+    </style>
+</head>
+<body>
+    <!---------- Navbar ------------>
+   <header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-gray-200 header">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 logo" href="./index.html">
+      <img src="./Assets/logo2.png" alt="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-48 h-18 text-white p-2" viewBox="0 0 24 24">
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-950" href="./index.html">Home</a>
+      <a class="mr-5 hover:text-gray-950" href="./About.html">About Us</a>
+      <a class="mr-5 hover:text-gray-900" href="./Contact.html">Contact Us</a>
+      <!-- <a class="mr-5 hover:text-gray-900">Fourth Link</a> -->
+    </nav>
+      <!-- <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 order-btn"><a href="">Order Now</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button> -->
+        <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 order-btn" id="scrollToProducts">
+      <a href="javascript:void(0)">Order Now</a>
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+<!-- Navbar Ended -->
+
+
+
+  <!-- Product Details Section
+  <div class="container px-5 py-10 mx-auto">
+    <div class="bg-white p-8 rounded-lg shadow-lg">
+      <img id="productImage" class="lg:h-80 md:h-100 w-full object-cover object-center mb-6" src="" alt="Product Image">
+      <h2 id="productCategory" class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"></h2>
+      <h1 id="productTitle" class="title-font text-lg font-medium text-gray-900 mb-3"></h1>
+      <p id="productDescription" class="leading-relaxed mb-6"></p>
+    </div>
+  </div> -->
+
+
+  
+<section class="text-gray-600 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-4/5 mx-auto flex flex-wrap">
+      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" id="productImage" src="">
+      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+        <h2 class="text-sm title-font text-gray-500 tracking-widest" id="productCategory"></h2>
+        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1" id="productTitle"></h1>
+        
+        <div class="flex mb-4">
+          <span class="flex items-center text-indigo-500">★★★★☆ <span class="text-gray-600 ml-3">4 Reviews</span></span>
+        </div>
+        
+        <!-- Description -->
+        <p class="leading-relaxed" id="productDescription"></p>
+        <p class="leading-relaxed text-right text-gray-700 mt-4" id="urduDescription"></p>
+
+        <!-- Toggle Button -->
+        <button id="toggleBtn" class="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded focus:outline-none cta-button">
+          اردو میں دیکھیں
+        </button>
+
+        <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5"></div>
+
+        <!-- Quantity Selector -->
+        <div class="flex items-center mb-4">
+          <span class="mr-4 font-medium text-lg">Quantity:</span>
+          <button id="decreaseQty" class="px-3 py-1 bg-gray-300 hover:bg-gray-400 text-black rounded-l pointer">-</button>
+          <input id="quantityInput" class="w-12 text-center border-t border-b border-gray-300" type="text" value="1" readonly>
+          <button id="increaseQty" class="px-3 py-1 bg-gray-300 hover:bg-gray-400 text-black rounded-r pointer">+</button>
+        </div>
+
+        <!-- Price and WhatsApp Order -->
+        <div class="flex items-center mb-3">
+          <span class="title-font font-medium text-xl text-gray-800">Unit Price: </span>
+          <span class="ml-2 text-gray-900 text-xl" id="productPrice"></span>
+        </div>
+        <div class="flex items-center mb-6 ">
+          <span class="title-font font-semibold text-2xl text-green-700">Total: </span>
+          <span class="ml-2 text-2xl font-bold text-green-900" id="totalPrice"></span>
+        </div>
+
+        <a id="whatsappOrderLink" target="_blank" class="flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded justify-center items-center">
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+   <!-- Script -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const productData = JSON.parse(localStorage.getItem('selectedProduct'));
+
+    const qtyInput = document.getElementById('quantityInput');
+    const productPriceEl = document.getElementById('productPrice');
+    const totalPriceEl = document.getElementById('totalPrice');
+    const whatsappLink = document.getElementById('whatsappOrderLink');
+
+    let unitPrice = 0;
+
+    if (productData) {
+      document.getElementById('productImage').src = productData.image;
+      document.getElementById('productCategory').innerText = productData.category;
+      document.getElementById('productTitle').innerText = productData.title;
+      document.getElementById('productDescription').innerText = productData.fullDescription;
+      document.getElementById('urduDescription').innerText = productData.urduDescription;
+      document.getElementById('productPrice').innerText = productData.price;
+
+      // Extract numeric value from price string (e.g., "Rs. 1200")
+      unitPrice = parseInt(productData.price.replace(/\D/g, '')) || 0;
+      updateTotalPrice();
+    } else {
+      alert('No product data found in localStorage.');
+    }
+
+    // Urdu toggle
+    const toggleBtn = document.getElementById('toggleBtn');
+    const engDesc = document.getElementById('productDescription');
+    const urduDesc = document.getElementById('urduDescription');
+
+    toggleBtn.addEventListener('click', function () {
+      const isUrduVisible = urduDesc.style.display === 'block';
+      urduDesc.style.display = isUrduVisible ? 'none' : 'block';
+      engDesc.style.display = isUrduVisible ? 'block' : 'none';
+      toggleBtn.innerText = isUrduVisible ? "اردو میں دیکھیں" : "See in English";
+    });
+
+    // Quantity + total price + WhatsApp
+    document.getElementById('increaseQty').addEventListener('click', () => {
+      qtyInput.value = parseInt(qtyInput.value) + 1;
+      updateTotalPrice();
+    });
+
+    document.getElementById('decreaseQty').addEventListener('click', () => {
+      if (parseInt(qtyInput.value) > 1) {
+        qtyInput.value = parseInt(qtyInput.value) - 1;
+        updateTotalPrice();
+      }
+    });
+
+    function updateTotalPrice() {
+      const qty = parseInt(qtyInput.value);
+      const total = qty * unitPrice;
+      totalPriceEl.innerText = `PKR ${total}`;
+      updateWhatsAppLink(qty, total);
+    }
+
+    function updateWhatsAppLink(quantity, totalPrice) {
+      const title = productData.title;
+      const phoneNumber = "+923353687669"; // 🔁 Replace with your WhatsApp number
+      const message = `Assalamualaikum! I would like to order:\n\nProduct: ${title}\nQuantity: ${quantity}\nTotal Price: Rs. ${totalPrice}\n\nPlease confirm availability.`;
+      const encodedMsg = encodeURIComponent(message);
+      const link = `https://wa.me/${phoneNumber}?text=${encodedMsg}`;
+      whatsappLink.href = link;
+    }
+  });
+</script>
+
+
+  <!--------- Footer ---------->
+
+  <footer class="text-gray-600 body-font bg-gray-200 pt-5">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="./Assets/logo2.png" alt="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-48 h-18 text-white p-2" viewBox="0 0 24 24">
+      </a>
+      <p class="mt-2 text-sm text-gray-500">*"Matab Bait-Ul-Shifa"*<br>
+        *Successful treatment of every disease through herbal methods — Without any side effects. — 100% Natural products
+      </p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <a class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">|</a>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">|</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">|</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">|</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">|</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Links</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800" href="./About.html"> About Us</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800" href="./Contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800" href="./index.html">Order Now</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Us</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <p class="text-gray-600 hover:text-gray-800">Hakeem Sahab</p>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">no. +92321-2290896</a>
+          </li>
+          <li>
+            <h2>Email Address:</h3>
+            <a class="text-gray-600 hover:text-gray-800" href="https://www.instagram.com/makkiindustries/">@makkiindustries</a>
+          </li>
+          <li>
+            <h2>For Online Order</h2>
+            <a class="text-gray-600 hover:text-gray-800">+92335-3687669</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <!-- <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2> -->
+        
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start  ">
+          <a class="text-gray-600 logo" href="https://www.facebook.com/profile.php?id=61573465461278">
+              <img src="./Assets/Facebook img.png" alt="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            
+          </a>
+          <a class="ml-3 text-gray-600 logo" href="https://www.instagram.com/makkiindustries/">
+            <img src="./Assets/instragram img.png" alt="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24" >
+            
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+           <a class="ml-3 text-gray-600 logo" href="">
+            <img src="./Assets/in blue img.png" alt="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24" >
+            
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          
+        </span>
+        <div class="mb-2 mt-2">
+          <img src="./Assets/App-1.webp" alt="App-Store" class="gap-x-2 inline-flex sm:ml-auto sm:mt-0 justify-center sm:justify-start">
+        </div>
+        <img src="./Assets/App-2.webp" alt="Google Play" class="gap-x-2 inline-flex sm:ml-auto sm:mt-0 justify-center sm:justify-start">
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100 bottom">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+        <a href="https://www.facebook.com/profile.php?id=61573465461278" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Makki Industries</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <h3>By Abdullah Nasir</h3>
+      
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

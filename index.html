@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makki Industries | by Abdullah Nasir</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!---------- Navbar ------------>
+   <header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-gray-200 header">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 logo" href="./index.html">
+      <img src="./Assets/logo2.png" alt="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-48 h-18 text-white p-2" viewBox="0 0 24 24">
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-950" href="./index.html">Home</a>
+      <a class="mr-5 hover:text-gray-950" href="./About.html">About Us</a>
+      <a class="mr-5 hover:text-gray-900" href="./Contact.html">Contact Us</a>
+      <!-- <a class="mr-5 hover:text-gray-900">Fourth Link</a> -->
+    </nav>
+      <!-- <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 order-btn"><a href="">Order Now</a>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button> -->
+        <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 order-btn" id="scrollToProducts">
+      <a href="javascript:void(0)">Order Now</a>
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <!------------ Crousel Image ------------->
+  
+  <!-- Slider -->
+<div data-hs-carousel='{
+    "loadingClasses": "opacity-0",
+    "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer",
+    "isAutoPlay": true
+  }' class="relative">
+  <div class="hs-carousel relative overflow-hidden w-full h-200 bg-white rounded-lg">
+    <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+      <div class="hs-carousel-slide">
+        <div class="flex justify-center h-full p-6">
+          <span class="self-center text-4xl text-gray-800 transition duration-700"><img src="./Assets/WELCOME TO MATAB BAIT-UL-SHIFA.png" alt=""></span>
+        </div>
+      </div>
+
+      <div class="hs-carousel-slide">
+        <div class="flex justify-center h-full p-6">
+          <span class="self-center text-4xl text-gray-800 transition duration-700"><img src="./Assets/Crousel-2 img.png" alt=""></span>
+        </div>
+
+      </div>
+      <div class="hs-carousel-slide">
+        <div class="flex justify-center h-full p-6">
+          <span class="self-center text-4xl text-gray-800 transition duration-700"><img src="./Assets/Crousel-3 img (2).png" alt=""></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-s-lg">
+    <span class="text-2xl" aria-hidden="true">
+      <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m15 18-6-6 6-6"></path>
+      </svg>
+    </span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button type="button" class="hs-carousel-next hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-e-lg">
+    <span class="sr-only">Next</span>
+    <span class="text-2xl" aria-hidden="true">
+      <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6"></path>
+      </svg>
+    </span>
+  </button>
+
+  <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 flex gap-x-2"></div>
+</div>
+<!-- End Slider -->
+
+  <!----------- Hero Section ----------->
+
+  <!-- Images -->
+<!-- <section>
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3" id="productCard1">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-80 md:h-100 w-full object-cover object-center" src="./Assets/img-1.jpg" alt="blog">
+          <div class="p-6" data-full-description="This is the full description of Pain Relief Oil. It deeply  penetrates muscles and joints. No side effects. 100% herbal. Perfect for joint pain, knee pain, and   arthritis. InshaAllah it helps without needing surgery."
+          data-price="1200">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Pain Relief Oil</h1>
+            <p class="leading-relaxed mb-3">
+              Pain Relief Oil
+              It doesn't just suppress the pain,
+              but eliminates it from the root.
+              Whether the pain is in any part of the body,
+              and no matter what type of pain it is,
+              by the will of Allah, it eliminates it.
+              Especially when doctors recommend knee replacement,
+              at that time, try this Pain Relief Oil,
+              and you won't need to go for knee replacement.
+              InshaAllah.
+            </p>
+          <div class="flex items-center flex-wrap ">
+            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" onclick="storeProductCard('productCard1')">See More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>1.2K
+            </span>
+            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" viewBox="0 0 24 24">
+                <path
+                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                </path>
+              </svg>6
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <div class="p-4 md:w-1/3" id="productCard2">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-80 md:h-100 w-full object-cover object-center" src="./Assets/img-2.jpg" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3" >Hair Oil</h1>
+            <p class="leading-relaxed mb-3" >Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" onclick="storeProductCard('productCard2')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="p-4 md:w-1/3" id="productCard3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-80 md:h-100 w-full object-cover object-center" src="./Assets/img-3.jpg" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Black Gold</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" onclick="storeProductCard('productCard3')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section class="text-gray-600 body-font " id="productsSection">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+      <!-- Product 1 -->
+      <div class="card" id="productCard1"
+           data-full-description="➢ This is the the only remedy for:
+              Cholesterol,
+              Blood Pressure,
+              Gas,
+              Joint Pain,
+              Irregular Heartbeat,
+              and blocked heart arteries.
+             ➢ After the doctor advises a bypass,
+              be sure to try this once before going for surgery.
+              InshaAllah, you will not need a bypass at all.
+             ➢ After using 5 bottles, get your tests done again —
+              even the doctors will be surprised by your report.
+
+             * Trial is a must."
+           data-urdu-description="●یہ شربت دل
+            , آپ کے کولیسٹرول , بلڈ پریشر , گیس 
+            , جوڑوں کا درد
+            دل کی دھڑکن 
+            اور دل کی بند شریانیں کھولنے کا واحد علاج۔
+           ● ڈاکٹر کے
+            بائی پاس کے مشورہ کے بعد
+            بائی پاس کروانےسے پہلے ایک بار ضرور استعمال کریں ۔
+            ان شاءاللہ
+            بائی پاس کی قطعاً ضرورت نہیں پڑے گی ۔
+           ● 5 بوتل کے استعمال کے بعد دوبارہ ٹیسٹ کروائیں۔
+            آپ کی رپورٹ ڈاکٹروں کو بھی حیران کر دے گی۔
+
+            آزمائش شرط ہے ۔"          
+            data-price="PKR 680">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-1..jpg" alt="Sharbat-e-Dil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Sharbat-e-Dil</h1>
+            <p class="leading-relaxed mb-3">This is the the only remedy for.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard1')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="card" id="productCard2"
+           data-full-description="*Hang the Cough*
+           ➢ Whether the cough is phlegmatic or dry,
+            this syrup does not suppress it but eliminates it from the root.
+           ➢ It is also excellent for throat tonsils.
+           ➢ Do not go for tonsil surgery.
+           ➢ Try it once before considering surgery.
+            InshaAllah, you will be cured."
+           data-urdu-description="*کھانسی کو دیں پھانسی* 
+            ● شربت
+            کھانسی شہتوت سے
+            کھانسی 
+            بلغمی ہو یا خشک
+            دونوں صورتوں میں یہ کھانسی کو دباتا نہیں بلکہ جڑ سے ختم کرتا پے
+           ● گلے کے ٹانسلز کے لئے بھی لاجواب ہے
+           ● ٹانسلز کا آپریشن ہر گز مت کروائیں
+           ● آپریشن سے پہلے 1 بار ضرور آزمائیں۔
+            ان شاءاللہ شفاء ہو گی"
+             data-price="PKR 240">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-2..jpg" alt="Hair Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Sharbat-e-Khansi Shehtoot</h1>
+            <p class="leading-relaxed mb-3">Sharbat-e-Khansi Shehtoot whether the.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard2')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="card" id="productCard3"
+           data-full-description="➢ It eliminates daily fatigue and exhaustion,
+            keep you active and energetic at all time.
+            ➢ Enhances the beauty of the face.
+            ➢ A special tonic for bodybuilders.
+            ➢ It builds muscle mass and helps maintain it for a longer time."
+           data-urdu-description="فولاد سلاجیتی_
+            ● دن بھر کے کام کاج
+            اور تھکاوٹ
+            کو دور کر کے
+            آپ کو ہر وقت
+            چاقو چوبند اور توانا رکھتا ہے
+            اور چہرے کی خوبصورتی کو چار چاند 🌙 لگاتا ہے
+            ● باڈی بلڈر
+            افراد کے لئے
+            خاص ٹانک۔
+            ● باڈی بلڈر افراد کے مسلز کو پھلاتا اور ان کو دیر تک برقرار رکھتا ہے ۔"
+           data-price="PKR 680">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-3..jpg" alt="Black Gold">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Sharbat-e-Faulad Salajeet</h1>
+            <p class="leading-relaxed mb-3">Folaad Salajeeti Eliminates daily.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard3')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+      <!-- Product 4 -->
+      <div class="card" id="productCard4"
+           data-full-description="➢ A source of strength and vitality.
+           ➢ To fully enjoy life and restore lost energy,
+            the use of Black Gold Paste rekindles your desires.
+
+            Note: Exclusively for men."
+           data-urdu-description="معجون بلیک گولڈ
+           ● طاقت اور قوت کا
+            سر چشمہ 
+           ● زندگی کا بھرپور مزہ حاصل کرنے
+            اور
+            کھوئی ہوئی توانائی کو دوبارہ بحال کرنے کے لئے 
+            معجون بلیک گولڈ 
+            کا اِستعمال آپ کی خواہشات کو پھر سے جوان کر دیتا ہے ۔
+           
+            نوٹ:
+            صرف مرد حضرات کے لئے خاص ۔
+           
+         "  data-price="PKR 5300">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-4..jpg" alt="Pain Relief Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Majoon Black Gold</h1>
+            <p class="leading-relaxed mb-3">Majoon Black Gold
+            A source of.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard4')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="card" id="productCard5"
+           data-full-description="➢ This slim powder eliminates excess fat from your body, make you slim, smart, and attractive.
+           ➢ It also balances your digestive system, relieves constipation, and regulates hormones.
+           ➢ It remove laziness and make you active and energetic"
+           data-urdu-description="● سلم سفوف آپ کے جسم سے فاضل چربی کو ختم کر کے آپ کو سلم اور سمارٹ بنا کر آپ کو جازب نظر بناتاہے
+           ● یہ سفوف سلم
+            , آپ کے معدے
+            قبض اور ہارمونز 
+            کے نظام کو بھی
+            اعتدال پر لاتا
+          ● آپ کی سستی کو بھگا کر آپ کو چاقو چوبند بناتا ہے۔ " 
+            data-price="PKR 2650">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-5..jpg" alt="Hair Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Safoof SlimI</h1>
+            <p class="leading-relaxed mb-3">This slim powder eliminates.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard5')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="card" id="productCard6"
+           data-full-description="➢ This is not an ordinary khamira.
+           ➢ It is specially beneficial for heart patients whose heartbeat becomes extremely low and are advised by doctors to get a pacemaker.
+           ➢ With the use of this remarkable khamira,
+            and by the command of Allah Almighty,
+            such patients no longer need a pacemaker.
+           ➢ One special benefit —
+            it strengthens the brain and nerves, stopping hand tremors.
+           ➢ It also prevents rapid hair fall in women.
+           ➢ A special tonic for children memorizing the Qur’an."
+           data-urdu-description="خمیرہ گاؤزبان عنبری و زعفرانی 
+            جواہرات والا 
+           ● یہ خمیرہ گاؤزباں عنبری و زعفرانی جواہرات والا کوئی عام خمیرہ نہیں ہے
+            بلکہ
+            یہ دل کے مریض جن کی ہارڈ بیٹ انتہائی کم ہونے کی وجہ سے ڈاکٹر بیٹری لگانے کا کہتےہیں
+            اس لاجواب خمیرہ کے استعمال سے
+           ● اللہ ربّ العزّت کے حکم سے ان مریضوں کو بیٹری کی ضرورت ہی نہیں پڑتی
+            اور
+            ایک خاص بات
+           ● یہ دماغی کمزوری اور اعصاب کو تقویت دے کر ہاتھوں کا (رعشہ) ہلنا بھی بند کر دیتا ہے۔
+           ● وہ خواتین جن کے بال بہت تیزی سے جھڑتے ہیں اس لاجواب خمیرہ کے استعمال سے بال جھڑنا بھی رک جاتے ہیں ۔
+           ● قرآن حفظ کرنے والے بچوں کے لئے خاص ٹانک"  
+             data-price="PKR 2650">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-6..jpg" alt="Black Gold">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Khameera Gauzaban Ambari <br> Zafrani Jawhirat Wala</h1>
+            <p class="leading-relaxed mb-3">This is not an ordinary.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard6')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+      <!-- Product 7 -->
+      <div class="card" id="productCard7"
+           data-full-description="➢ It Relieves heaviness in the chest,
+            heartburn,
+            acidity in the stomach,
+            sour burps,
+            and improves the digestive system to keep you feeling fresh at all times.
+
+           ➢ For constipation, take one spoon of Churan Hazim Maki with lukewarm water at bedtime.
+           ➢ You will have complete relief in the morning,
+            InshaAllah."
+           data-urdu-description="*چورن ہاضم مکی* 
+           ● سینے کا بھاری پن,
+            سینے کی جلن,
+            معدے کی تیزابیت,
+            کھٹی ڈکاریں
+            اور
+            نظام ہضم کو درست کر کےآپ کو ہر وقت ترو تازہ رکھے
+           ● قبض کی شکایت کے لئے چورن ہاضم مکی رات سوتے وقت ایک چمچہ نیم گرم پانی سے کھا لیں۔
+           ● صبح کھل کر اجابت ہو گی۔
+            ان شاءاللہ"
+           data-price="PKR 210">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-7..jpg" alt="Pain Relief Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3"></h1>
+            <p class="leading-relaxed mb-3">Churan Hazim Maki
+            Relieves heaviness in.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard7')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="card" id="productCard8"
+           data-full-description="➢ These capsules not only control blood sugar,
+            but also eliminate the weakness caused by diabetes.
+           ➢ They control sugar levels to the extent that you can consume all fruits
+            and occasionally even sweets.
+            And most importantly,
+            within just 15 to 20 days,
+            you can be free from the pain of insulin injections — permanently,
+            by the will of Allah."
+           data-urdu-description="شوگر کنٹرول کیپسول
+            ● یہ کیپسول صرف شوگر کو ہی کنٹرول نہیں کرتا
+            بلکہ
+            شوگر کی وجہ جسم میں کمزوری آ جاتی ہے اس کو بھی ختم کرتا ہے
+            اور شوگرکو اس حد تک کنٹرول رکھتا ہے
+            کہ آپ تمام پھلوں کا استعمال
+            اور کبھی کبھی میٹھا بھی استعمال کر سکتے ہیں ۔
+           ●  اور ایک خاص بات 
+            شوگر کنٹرول کیپسول سے
+            صرف 15 سے 20 دن میں انسولین لگانے کی ازیت سے بھی
+            ہمیشہ کے لئے جان چھوٹ جاتی ہے۔
+            اللہ کے حکم سے ۔"
+           data-price="PKR 500">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-8..jpg" alt="Hair Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Diabetes Control Capsule</h1>
+            <p class="leading-relaxed mb-3">These capsules not only.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard8')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="card" id="productCard9"
+           data-full-description="➢ It eliminates tooth decay, bleeding, pus, stains from betel and cigarettes, sensitivity to hot and cold, and yellowing of teeth.
+            ➢ This Manjan Surkh Maki makes your teeth as white and shiny as pearls,
+            by the command of Almighty Allah."
+           data-urdu-description="منجن سرخ مکی
+            ● دانتوں کے کیڑے
+            خون , پیپ
+            پان , سگریٹ کے نشان,
+            ٹھنڈا گرم لگنا,
+            دانتوں کا پیلا پن,
+            تمام بیماریوں کو ختم کر کے کرتا ہے-
+            ● منجن سرخ مکی
+            آپ کے دانتوں کو موتی کی طرح سفید اور چمکدار بناتا ہے ۔
+            حکم باری تعالیٰ س"
+           data-price="PKR 190">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-9..jpg" alt="Black Gold">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Makki Red Tooth Powder</h1>
+            <p class="leading-relaxed mb-3">Makki Red Tooth Poeder eliminates tooth.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard9')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+      <!-- Product 10 -->
+      <div class="card" id="productCard10"
+           data-full-description="➢ Itching, ringworm, eczema,
+            rash, heat pimples,
+            diaper rash in children,
+            or any kind of itching in sensitive areas of adults —
+            you will see a visible difference after just one or two applications,
+            by the command of Almighty Allah."
+           data-urdu-description="*مکی مرہم خاص*
+           ● خارش ، داد ، چمبل 
+            کھجلی، گرمی دانے،
+            بچوں کے نیپی ریش,
+            بڑوں کے مخصوص جگہوں پر کیسی ہی خارش کیوں نہ ہو صرف 1 یا 2 دفعہ کے استعمال سے آپ کو واضح فرق نظر آئے۔
+            حکم باری تعالیٰ سے"
+           data-price="PKR 160">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-10..jpg" alt="Pain Relief Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Makki Marham Khas</h1>
+            <p class="leading-relaxed mb-3">Itching, ringworm, eczema,
+            rash.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard10')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="card" id="productCard11"
+           data-full-description="
+           ➢ It permanently removes spots and blemishes from the face.
+           ➢ Eliminates pimples and acne,
+            and makes you so fair that anyone who sees you is left mesmerized.
+           ➢ When the magic of Kashish begins to work, no one can resist it.
+           ➢ Once it enters a home, the whole family is compelled to order it.
+            By the will of Allah."
+           data-urdu-description="● کشش بیوٹی کریم 
+            چہرے کے
+            داغ دھبے
+            ہمیشہ کے لیے غائب
+           ● چہرےکے 
+            کیل مہاسوں
+            کو ختم کر کے
+            یہ کشش بیوٹی کریم 
+            آپ کو اس قدر
+            گورا بنائے
+            جو ایک بار دیکھے 
+            تو دیکھتا ہی رہ جائے-
+           ● کشش کا 
+            جادو چل جائے
+            تو کوئی بچ نا پائے۔
+           ● جس گھر میں ایک بار 
+            جائے
+            تو پورا خاندان منگوانے پر مجبور ہو جائے ۔
+            اللہ کے حکم سے"
+           data-price="PKR 415">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-11..jpg" alt="Hair Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">KASHISH BEAUTY CREAM</h1>
+            <p class="leading-relaxed mb-3">Kashish Beauty Cream permanently removes.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center cta-button" onclick="storeProductCard('productCard11')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="card" id="productCard12"
+           data-full-description="➢ This white kohl is a magical and highly effective eye remedy.
+           ➢ It eliminates cataracts, blurriness, itching, and bumps in the eyes, restoring your vision.
+           ➢ With regular use, it can even make your glasses disappear from your face as if by magic,
+            by the will of Allah."
+           data-urdu-description="*نگاہ بچاؤ سرمہ* 
+           ● یہ سفید سرمہ ایک جادوئی اور بہترین سرمہ ہے۔
+            جو آنکھ سے
+            کالا موتیا، جالا، خارش اور دانوں کو ختم کر کے آپ کی نگاہوں کی روشنی کو بہال کرتا ہے۔
+           ● اس کا مستقل استعمال آپ کے چہرے سے جادوئی طور پرچشمے کو بھی غائب کر دیتا ہے۔
+            *اللہ کے حکم سے* ۔"
+           data-price="PKR 350">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-12..jpg" alt="Black Gold">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Eye Protection Kohl</h1>
+            <p class="leading-relaxed mb-3">This eye protection kohl kohl is a.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center cta-button" onclick="storeProductCard('productCard12')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+      <!-- Product 13 -->
+      <div class="card" id="productCard13"
+           data-full-description="➢ This oil does not suppress the pain —
+            it eliminates it from the root.
+           ➢ No matter where the pain is in the body,
+            and no matter what type it is,
+            it ends it by the will of Allah.
+           ➢ Especially when doctors recommend knee replacement,
+            try this Pain Relief Oil —
+            you won’t need surgery at all,
+            InshaAllah."
+           data-urdu-description="*پین ریلیف آئل*
+           ● یہ درد کو دباتا نہیں 
+            بلکہ جڑ سے ختم کرتا ہے ۔
+           ● درد جسم کے کسی بھی حصہّ میں ہو
+            اور
+            درد کیسا بھی کیوں نہ ہو۔
+            اللہ کے حکم سے ختم کرتا ہے ۔
+           ● خاص کر جب ڈاکٹر  گھٹنوں کو بدلوانے کا مشورہ دیں اس وقت آپ اس
+            *پین ریلیف آئل*
+            کو آزمائیں گھٹنے بدلوانے کی نوبت ہی نہیں آئے گی ۔
+            *ان شاءاللہ* "
+           data-price="PKR 680">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-13..jpg" alt="Pain Relief Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Pain Relief Oil</h1>
+            <p class="leading-relaxed mb-3">This oil does not suppress the.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard13')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 14 -->
+      <div class="card" id="productCard14"
+           data-full-description="➢ It makes hair long, thick, silky, and shiny.
+           ➢ Eliminates split ends and promotes rapid hair growth.
+           ➢ Quietly removes dandruff, making you more attractive and providing peaceful sleep.
+           ➢ The very first bottle of Maki Zulfi Special Hair Oil
+            shows a visible difference, by the will of Allah."
+           data-urdu-description=" *مکی زلفی اسپیشل ہئیر آئل 
+           ● بالوں کو
+            لمبا , گھنا
+            سلکی اور
+            چمکدار بناتا ہے
+           ● 2 منہ کے بالوں کا خاتمہ کرکےبالوں کو تیزی سے بڑھاتا ہے
+           ● چپکے چپکے 
+            بالوں سے خشکی دور بھگا کر آپ کو
+            پر کشش بناتا ہے
+            اور پرسکون نیند فراہم کرتا ہے 
+           ● مکی زلفی
+            اسپیشل ہئیر آئل
+            کی پہلی ہی بوتل
+            آپ کو واضح فرق دکھائے 
+            اللہ کے حکم سے"
+            data-price="PKR 720">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-14..jpg" alt="Hair Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Makki Zulfi Hair Oil</h1>
+            <p class="leading-relaxed mb-3">Makki Zulfi Hair Oil makes hair.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard14')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 15 -->
+      <div class="card" id="productCard15"
+           data-full-description="➢ This is not an ordinary syrup.
+            Sharbat-e-Thandak Naqra eliminates heat from the stomach and liver, and strengthens the bladder.
+            It helps relieve:
+           ● Yellow urine
+           ● Burning sensation
+           ● Dribbling after urination
+           ➢ The very first bottle will show you a noticeable difference, by the will of Allah."
+           data-urdu-description="*شربت ٹھنڈک نقرہ* 
+           ● یہ شربت کوئی عام شربت نہیں
+            یہ شربت ٹھنڈک نقرہ
+            معدے اور جگر کی گرمی کو ختم کر کے آپ کے مثانے کو طاقت فراہم کرتا ہے
+            جس سے
+            پیشاب کا پیلا پن
+            جلن اور 
+            قطرہ آنے کی تکلیف کو دور کرتا ہے
+           ● پہلی بوتل ہی آپ کو واضح فرق دکھائے 
+            *اللہ کے حکم سے*"
+           data-price="PKR 1500">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-15..jpg" alt="Black Gold">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Eye Protection Kohl</h1>
+            <p class="leading-relaxed mb-3">Thandak Naqra Syrup is not an.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard15')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap -m-4 items-center justify-center">
+
+      <!-- Product 16 -->
+      <div class="card" id="productCard16"
+          data-full-description="➢ Pure honey from Swat –
+            An essential component of Prophetic Medicine ﷺ,
+            which has been described as a cure for all illnesses except death.
+           ➢ Berry honey is also available for diabetic patients."
+          data-urdu-description=" *مکی سواتی شہد*
+           ● سوات کا خالص شہد
+            طب نبوی
+            صلی اللہ علیہ وسلم
+            کا ایک اہم جز
+            جسے سوائے موت کے
+            تمام امراض کے لئے شفاء کہا گیا ہے
+           ● شوگر کے مریضوں کے لیے *بیری* کا شہد بھی دستیاب ہے"
+          data-price="PKR 240">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="h-100 w-full object-cover object-center" src="./Assets/img-16..jpg" alt="Pain Relief Oil">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKKI INDUSTRIES</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Makki Sawati Honey</h1>
+            <p class="leading-relaxed mb-3">This oil does not suppress the.....</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center pointer cta-button" onclick="storeProductCard('productCard16')">See More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--------- Footer ---------->
+
+<footer class="text-gray-600 body-font bg-gray-200 pt-5">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="./Assets/logo2.png" alt="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-48 h-18 text-white p-2" viewBox="0 0 24 24">
+      </a>
+      <p class="mt-2 text-sm text-gray-500">*"Matab Bait-Ul-Shifa"*<br>
+        *Successful treatment of every disease through herbal methods — Without any side effects. — 100% Natural products
+      </p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <a class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">|</a>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">|</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">|</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">|</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">|</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Links</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800" href="./About.html"> About Us</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800" href="./Contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800" href="./index.html">Order Now</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Us</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <p class="text-gray-600 hover:text-gray-800">Hakeem Sahab</p>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">no. +92321-2290896</a>
+          </li>
+          <li>
+            <h2>Email Address:</h3>
+            <a class="text-gray-600 hover:text-gray-800" href="https://www.instagram.com/makkiindustries/">@makkiindustries</a>
+          </li>
+          <li>
+            <h2>For Online Order</h2>
+            <a class="text-gray-600 hover:text-gray-800">+92335-3687669</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <!-- <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2> -->
+        
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start  ">
+          <a class="text-gray-600 logo" href="https://www.facebook.com/profile.php?id=61573465461278">
+              <img src="./Assets/Facebook img.png" alt="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            
+          </a>
+          <a class="ml-3 text-gray-600 logo" href="https://www.instagram.com/makkiindustries/">
+            <img src="./Assets/instragram img.png" alt="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24" >
+            
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+           <a class="ml-3 text-gray-600 logo" href="">
+            <img src="./Assets/in blue img.png" alt="" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24" >
+            
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          
+        </span>
+        <div class="mb-2 mt-2">
+          <img src="./Assets/App-1.webp" alt="App-Store" class="gap-x-2 inline-flex sm:ml-auto sm:mt-0 justify-center sm:justify-start">
+        </div>
+        <img src="./Assets/App-2.webp" alt="Google Play" class="gap-x-2 inline-flex sm:ml-auto sm:mt-0 justify-center sm:justify-start">
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100 bottom">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+        <a href="https://www.facebook.com/profile.php?id=61573465461278" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Makki Industries</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <h3>By Abdullah Nasir</h3>
+      
+    </div>
+  </div>
+</footer>
+
+<!-- /////JAVA SCRIPT//// -->
+
+
+<script>
+  function storeProductCard(id) {
+    const card = document.getElementById(id);
+    const productData = {
+      image: card.querySelector('img').src,
+      category: card.querySelector('h2').innerText,
+      title: card.querySelector('h1').innerText,
+      shortDescription: card.querySelector('p').innerText,
+      fullDescription: card.dataset.fullDescription,
+      urduDescription: card.dataset.urduDescription,
+      price: card.dataset.price
+    };
+    localStorage.setItem('selectedProduct', JSON.stringify(productData));
+    window.location = "seemore.html";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollBtn = document.getElementById("scrollToProducts");
+    const targetSection = document.getElementById("productsSection");
+
+    if (scrollBtn && targetSection) {
+      scrollBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  });
+</script>
+
+
+  <!-- Font Awesome link -->
+  <script src="https://kit.fontawesome.com/70465652f7.js" crossorigin="anonymous"></script>
+  <!-- Preline Talwend Link -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://unpkg.com/preline@latest/dist/preline.js"></script>
+</body>
+</html>
+
