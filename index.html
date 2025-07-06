@@ -33,34 +33,42 @@
     </button>
   </div>
 </header>
-
-    <!------------ Crousel Image ------------->
   
-  <!-- Slider -->
+  <!--------- Slider ---------->
+
+  <!-- Scrolling Line (Marquee) Above Carousel -->
+<div class="w-full bg-gray-100 overflow-hidden">
+  <div class="relative w-full">
+    <div class="marquee-wrapper">
+      <div class="marquee-content text-gray-700 py-2 px-4 font-medium text-sm sm:text-base">
+        🛒 Real reviews from real customers – See why people love shopping with us at Makki Industries! 🚀 | Fast delivery on orders 🚚 | Amazing Quality ⭐ | Trusted by thousands! 💯 | Experience quality with Makki Industries
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div data-hs-carousel='{
     "loadingClasses": "opacity-0",
     "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer",
     "isAutoPlay": true
   }' class="relative">
-  <div class="hs-carousel relative overflow-hidden w-full h-200 bg-white rounded-lg">
+  
+  <div class="hs-carousel relative overflow-hidden w-full bg-white rounded-lg h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px]">
     <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-      <div class="hs-carousel-slide">
-        <div class="flex justify-center h-full p-6">
-          <span class="self-center text-4xl text-gray-800 transition duration-700"><img src="./Assets/WELCOME TO MATAB BAIT-UL-SHIFA.png" alt=""></span>
-        </div>
+      
+      <div class="hs-carousel-slide w-full flex justify-center items-center p-4">
+        <img src="./Assets/WELCOME TO MATAB BAIT-UL-SHIFA.png" alt="" class="max-h-full max-w-full object-contain">
+      </div>
+      
+      <div class="hs-carousel-slide w-full flex justify-center items-center p-4">
+        <img src="./Assets/Crousel-2 img.png" alt="" class="max-h-full max-w-full object-contain">
+      </div>
+      
+      <div class="hs-carousel-slide w-full flex justify-center items-center p-4">
+        <img src="./Assets/Crousel-3 img (2).png" alt="" class="max-h-full max-w-full object-contain">
       </div>
 
-      <div class="hs-carousel-slide">
-        <div class="flex justify-center h-full p-6">
-          <span class="self-center text-4xl text-gray-800 transition duration-700"><img src="./Assets/Crousel-2 img.png" alt=""></span>
-        </div>
-
-      </div>
-      <div class="hs-carousel-slide">
-        <div class="flex justify-center h-full p-6">
-          <span class="self-center text-4xl text-gray-800 transition duration-700"><img src="./Assets/Crousel-3 img (2).png" alt=""></span>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -72,6 +80,7 @@
     </span>
     <span class="sr-only">Previous</span>
   </button>
+  
   <button type="button" class="hs-carousel-next hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden focus:bg-gray-800/10 rounded-e-lg">
     <span class="sr-only">Next</span>
     <span class="text-2xl" aria-hidden="true">
@@ -84,35 +93,183 @@
   <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 flex gap-x-2"></div>
 </div>
 
-  <!----------- Hero Section ----------->
+<!-- Review Section -->
 
-<section class="text-gray-600 body-font " id="productsSection">
+<div class="max-w-screen-xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-semibold text-gray-900">Customer Reviews</h2>
+    <p class="mt-4 text-lg text-gray-500">What our customers are saying about us.</p>
+  </div>
+
+  <!-- Slider Container -->
+  <div class="relative">
+    <!-- Review Cards Wrapper -->
+    <div id="reviewSlider" class="overflow-hidden">
+      <div class="flex transition-transform duration-500 ease-in-out" id="reviewsContainer">
+        
+        <!-- Review Card 1 -->
+        <div class="mx-2 flex-shrink-0">
+          <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div class="text-center">
+              <p class="text-lg font-semibold text-gray-800">Rehan</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ☆</div>
+              <p class="text-sm text-gray-500 mt-2">"I've got my lost energy back by using there Majoon Black Gold. Really best tonic to feel happy and powerfull"</p>
+            </div>
+          </div>
+        </div> 
+        
+        <!-- Review Card 2 -->
+        
+        <div class="mx-2 flex-shrink-0">
+          <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div class="text-center">
+              <p class="text-lg font-semibold text-gray-800">Sameer</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ★</div>
+              <p class="text-sm text-gray-500 mt-2">"Your herbal Sugar Control Capsule helped me control my blood sugar naturally. I feel more stable and healthy."</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Review Card 3 -->
+        <div class="mx-2 flex-shrink-0">
+          <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div class="text-center">
+              <p class="text-lg font-semibold text-gray-800">Sana k.</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ★</div>
+              <p class="text-sm text-gray-500 mt-2">"I used there kashish beauty cream. Literally this is amazing tonic which help me to glow like a sun."</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Review Card 1 -->
+        <div class="mx-2 flex-shrink-0">
+          <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div class="text-center">
+              <p class="text-lg font-semibold text-gray-800">Danyal K.</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ★</div>
+              <p class="text-sm text-gray-500 mt-2">"I take Khameera Gaouzaban for my child who often forget his tasks. It heleped him to increase his memory."</p>
+            </div>
+          </div>
+        </div>
+        
+
+         <!-- Review Card 1 -->
+         <div class="mx-2 flex-shrink-0">
+           <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+             <div class="text-center">
+               <p class="text-lg font-semibold text-gray-800">Fatima N.</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ★</div>
+              <p class="text-sm text-gray-500 mt-2">"Your Sharbat-e-Faulad  helped me control my blood sugar naturally. I feel more stable and healthy."</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Review Card 1 -->
+        <div class="mx-2 flex-shrink-0">
+          <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div class="text-center">
+              <p class="text-lg font-semibold text-gray-800">Naveed</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ☆</div>
+              <p class="text-sm text-gray-500 mt-2">"The joint pain I struggled with for years is now almost gone. Your pain relief oil is magic — and all-natural!"</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Review Card 2 -->
+        <div class="mx-2 flex-shrink-0">
+          <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div class="text-center">
+              <p class="text-lg font-semibold text-gray-800">Hira S.</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ★</div>
+              <p class="text-sm text-gray-500 mt-2">"Your herbal Cough syrup helped my child with a persistent cough — no antibiotics needed!"</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Review Card 4 -->
+        <div class="mx-2 flex-shrink-0">
+          <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div class="text-center">
+              <p class="text-lg font-semibold text-gray-800">Tariq M.</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ★</div>
+              <p class="text-sm text-gray-500 mt-2">"After using your hair oil for just three weeks, I noticed new hair growth and less hair fall. Highly recommended!"</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Review Card 4 -->
+        <div class="mx-2 flex-shrink-0">
+          <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div class="text-center">
+              <p class="text-lg font-semibold text-gray-800">Ali Z.</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ☆</div>
+              <p class="text-sm text-gray-500 mt-2">"Your Safoof Slim powder cleansed my system gently. I feel lighter, and my bloating is gone!"</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Review Card 4 -->
+        <div class="mx-2 flex-shrink-0">
+          <div class="review-card bg-white p-8 rounded-lg shadow-lg w-80 transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div class="text-center">
+              <p class="text-lg font-semibold text-gray-800">Zainab K.</p>
+              <div class="flex justify-center mt-2 text-yellow-500">★ ★ ★ ★ ★</div>
+              <p class="text-sm text-gray-500 mt-2">"Excellent packaging, fast delivery, and the results speak for themselves. Will definitely reorder."</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Add more review cards if needed -->
+        
+      </div>
+    </div>
+    
+    <!-- Navigation Dots -->
+    <div id="sliderNav" class="flex justify-center mt-6 space-x-2"></div>
+
+    <!-- Navigation Buttons -->
+    <button id="prevButton" class="absolute top-1/2 left-4 z-10 transform -translate-y-1/2 px-4 py-2 text-white bg-gray-700 bg-opacity-50 hover:bg-opacity-70 rounded-full">❮</button>
+    <button id="nextButton" class="absolute top-1/2 right-4 z-10 transform -translate-y-1/2 px-4 py-2 text-white bg-gray-700 bg-opacity-50 hover:bg-opacity-70 rounded-full">❯</button>
+  </div>
+</div>
+
+
+<div class="text-center py-8">
+  <h2 class="text-3xl font-semibold text-gray-900">Our Herbal Remedies</h2>
+  <p class="mt-4 text-lg text-gray-500">Handpicked, natural solutions designed to support your health—backed by centuries of herbal wisdom.</p>
+</div>
+
+<!----------- Hero Section ----------->
+
+<section class="text-gray-600 body-font" id="productsSection">
   <div class="container px-5 py-10 mx-auto">
-    <div class="flex flex-wrap -m-4">
-
+    <div class="flex flex-wrap -m-4 items-center justify-center">
+      
       <!-- Product 1 -->
       <div class="card" id="productCard1"
-           data-full-description="➢ This is the the only remedy for:
-              Cholesterol,
-              Blood Pressure,
-              Gas,
-              Joint Pain,
-              Irregular Heartbeat,
-              and blocked heart arteries.
-             ➢ After the doctor advises a bypass,
-              be sure to try this once before going for surgery.
-              InshaAllah, you will not need a bypass at all.
-             ➢ After using 5 bottles, get your tests done again —
-              even the doctors will be surprised by your report.
+      data-full-description="➢ This is the the only remedy for:
+      Cholesterol,
+      Blood Pressure,
+      Gas,
+      Joint Pain,
+      Irregular Heartbeat,
+      and blocked heart arteries.
+      ➢ After the doctor advises a bypass,
+      be sure to try this once before going for surgery.
+      InshaAllah, you will not need a bypass at all.
+      ➢ After using 5 bottles, get your tests done again —
+      even the doctors will be surprised by your report.
 
-             * Trial is a must."
-           data-urdu-description="●یہ شربت دل
-            , آپ کے کولیسٹرول , بلڈ پریشر , گیس 
-            , جوڑوں کا درد
-            دل کی دھڑکن 
-            اور دل کی بند شریانیں کھولنے کا واحد علاج۔
-           ● ڈاکٹر کے
-            بائی پاس کے مشورہ کے بعد
+      * Trial is a must."
+      data-urdu-description="●یہ شربت دل
+      , آپ کے کولیسٹرول , بلڈ پریشر , گیس 
+      , جوڑوں کا درد
+      دل کی دھڑکن 
+      اور دل کی بند شریانیں کھولنے کا واحد علاج۔
+      ● ڈاکٹر کے
+      بائی پاس کے مشورہ کے بعد
             بائی پاس کروانےسے پہلے ایک بار ضرور استعمال کریں ۔
             ان شاءاللہ
             بائی پاس کی قطعاً ضرورت نہیں پڑے گی ۔
@@ -254,7 +411,7 @@
 
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-10 mx-auto">
-    <div class="flex flex-wrap -m-4">
+    <div class="flex flex-wrap -m-4 items-center justify-center">
 
       <!-- Product 4 -->
       <div class="card" id="productCard4"
@@ -409,7 +566,7 @@
 
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-10 mx-auto">
-    <div class="flex flex-wrap -m-4">
+    <div class="flex flex-wrap -m-4 items-center justify-center">
 
       <!-- Product 7 -->
       <div class="card" id="productCard7"
@@ -567,7 +724,7 @@
 
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-10 mx-auto">
-    <div class="flex flex-wrap -m-4">
+    <div class="flex flex-wrap -m-4 items-center justify-center">
 
       <!-- Product 10 -->
       <div class="card" id="productCard10"
@@ -721,7 +878,7 @@
 
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-10 mx-auto">
-    <div class="flex flex-wrap -m-4">
+    <div class="flex flex-wrap -m-4 items-center justify-center">
 
       <!-- Product 13 -->
       <div class="card" id="productCard13"
@@ -1074,6 +1231,91 @@
       });
     }
   });
+</script>
+
+
+<!-- JS for slider functionality -->
+<script>
+  const reviewSlider = document.getElementById("reviewSlider");
+  const reviewsContainer = document.getElementById("reviewsContainer");
+  const reviewCards = reviewsContainer.querySelectorAll(".review-card");
+  const sliderNav = document.getElementById("sliderNav");
+  const prevButton = document.getElementById("prevButton");
+  const nextButton = document.getElementById("nextButton");
+
+  const reviewWidth = reviewCards[0].offsetWidth + 16; // card + margin
+  const totalCards = reviewCards.length;
+  const visibleCards = Math.floor(reviewSlider.offsetWidth / reviewWidth);
+
+  let currentIndex = 0;
+  let autoSlide;
+
+  // Create dots
+  for (let i = 0; i <= totalCards - visibleCards; i++) {
+    const dot = document.createElement("button");
+    dot.className = "h-3 w-3 bg-gray-300 rounded-full transition-colors";
+    dot.dataset.index = i;
+    dot.addEventListener("click", () => {
+      currentIndex = i;
+      updateSlider();
+    });
+    sliderNav.appendChild(dot);
+  }
+
+  const dots = sliderNav.querySelectorAll("button");
+
+  function updateSlider() {
+    reviewsContainer.style.transform = `translateX(-${currentIndex * reviewWidth}px)`;
+    dots.forEach(dot => dot.classList.remove("bg-gray-800"));
+    if (dots[currentIndex]) dots[currentIndex].classList.add("bg-gray-800");
+  }
+
+  function nextSlide() {
+    if (currentIndex >= totalCards - visibleCards) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+    updateSlider();
+  }
+
+  function prevSlide() {
+    if (currentIndex <= 0) {
+      currentIndex = totalCards - visibleCards;
+    } else {
+      currentIndex--;
+    }
+    updateSlider();
+  }
+
+  function startAutoSlide() {
+    autoSlide = setInterval(() => {
+      nextSlide();
+    }, 5000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlide);
+  }
+
+  prevButton.addEventListener("click", () => {
+    stopAutoSlide();
+    prevSlide();
+    startAutoSlide();
+  });
+
+  nextButton.addEventListener("click", () => {
+    stopAutoSlide();
+    nextSlide();
+    startAutoSlide();
+  });
+
+  reviewSlider.addEventListener("mouseenter", stopAutoSlide);
+  reviewSlider.addEventListener("mouseleave", startAutoSlide);
+
+  // Init
+  updateSlider();
+  startAutoSlide();
 </script>
 
 
