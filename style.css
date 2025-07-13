@@ -77,7 +77,6 @@ header a:hover, footer a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 2px;
   margin: 5px;
-  /* keep your existing margin and padding untouched */
 }
 
 .card:hover {
@@ -91,10 +90,6 @@ header a:hover, footer a:hover {
     background-size: cover;
 }
 
-/* h1{
-    font-size: 1.8rem;
-} */
-
 .order-btn{
     background-color: #ac9629; /* Or whichever color you pick */
   color:#000000;
@@ -104,7 +99,6 @@ header a:hover, footer a:hover {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-    
 }
 
 .order-btn:hover{
@@ -126,8 +120,6 @@ header a:hover, footer a:hover {
 }
 
 .cart{
-    
-    
     display: flex;
     justify-content: flex-end;
     align-items:flex-start;
@@ -143,7 +135,6 @@ header a:hover, footer a:hover {
     font-size: 2.55rem;
     margin-bottom: 20px;
 }
-
 
   .marquee-wrapper {
     width: 100%;
